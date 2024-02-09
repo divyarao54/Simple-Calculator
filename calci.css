@@ -1,0 +1,141 @@
+h2{
+    color: white;
+}
+
+body{
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+table{
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    padding: auto;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 5px;
+    
+}
+
+
+input[type = "text"]{
+    background-color: black;
+    border-collapse: collapse;
+    border: 0 none;
+}
+
+#res{
+    color: white;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    padding: 5%;
+}
+
+.l_grey{
+    font-size: medium;
+    background-color: grey;
+    border-radius: 100%;
+    padding: 2%;
+    border: 0 none;
+    outline: none;
+    margin: 0.25%;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    border: none;
+    text-align: center;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.d_grey{
+    font-size: medium;
+    background-color: darkslategrey;
+    border-radius: 100%;
+    color: white;
+    padding: 2%;
+    border: 0 none;
+    outline: none;
+    margin: 0.25%;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    border: none;
+    text-align: center;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.orange{
+    font-size: medium;
+    background-color: darkorange;
+    border-radius: 100%;
+    color: #ffffff;
+    padding: 2%;
+    border: 0 none;
+    outline: none;
+    margin: 0.25%;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    border: none;
+    text-align: center;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#zero{
+    background-color: darkslategrey;
+    border-radius: 18px;
+    color: white;
+    padding: 2%;
+    border: 0 none;
+    outline: none;
+    margin: 0.25%;;
+    width: 10rem;
+    height: 4rem;
+    position: relative;
+    border: none;
+    text-align: center;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer; 
+}
+  
+.l_grey:after,
+.d_grey:after,
+.orange:after,
+#zero:after {
+    content: "";
+    background-color: rgb(255, 255, 255, 0.5); 
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s ease; 
+}
+
+.l_grey:active:after,
+.d_grey:active:after,
+.orange:active:after,
+#zero:active:after {
+    opacity: 1; 
+    transition: opacity 0.5s; 
+}
